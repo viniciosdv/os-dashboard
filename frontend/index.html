@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OS::DASHBOARD // Kernel Simulation Monitor</title>
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="crt-vignette"></div>
+
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-glyph">▣</span>
+      <div class="brand-text">
+        <h1>OS<span class="accent">::</span>DASHBOARD</h1>
+        <p class="subtitle">kernel simulation monitor // c-core + java-bridge</p>
+      </div>
+    </div>
+    <div class="conn-status" id="connStatus">
+      <span class="dot" id="connDot"></span>
+      <span id="connLabel">CONNECTING…</span>
+    </div>
+  </header>
+
+  <main class="grid">
+
+    <!-- Painel: gauges principais -->
+    <section class="panel panel-gauges">
+      <h2 class="panel-title">CORE METRICS</h2>
+      <div class="gauges">
+        <div class="gauge">
+          <svg viewBox="0 0 120 120" class="gauge-ring">
+            <circle cx="60" cy="60" r="52" class="ring-bg"/>
+            <circle cx="60" cy="60" r="52" class="ring-fg" id="cpuRing"/>
+          </svg>
+          <div class="gauge-label">
+            <span class="gauge-value" id="cpuValue">0%</span>
+            <span class="gauge-name">CPU</span>
+          </div>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120" class="gauge-ring">
+            <circle cx="60" cy="60" r="52" class="ring-bg"/>
+            <circle cx="60" cy="60" r="52" class="ring-fg ring-magenta" id="memRing"/>
+          </svg>
+          <div class="gauge-label">
+            <span class="gauge-value" id="memValue">0%</span>
+            <span class="gauge-name">MEMORY</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><span class="stat-k">TICK</span><span class="stat-v" id="statTick">0</span></div>
+        <div class="stat"><span class="stat-k">ALGO</span><span class="stat-v accent" id="statAlgo">—</span></div>
+        <div class="stat"><span class="stat-k">CTX SWITCH</span><span class="stat-v" id="statCtx">0</span></div>
+        <div class="stat"><span class="stat-k">PAGE FAULTS</span><span class="stat-v warn" id="statFaults">0</span></div>
+        <div class="stat"><span class="stat-k">READY Q</span><span class="stat-v" id="statReadyQ">0</span></div>
+        <div class="stat"><span class="stat-k">RUNNING PID</span><span class="stat-v accent" id="statRunning">—</span></div>
+      </div>
+    </section>
+
+    <!-- Painel: gráfico histórico -->
+    <section class="panel panel-chart">
+      <h2 class="panel-title">CPU UTILIZATION // last 30s</h2>
+      <canvas id="cpuChart" class="chart-canvas"></canvas>
+    </section>
+
+    <!-- Painel: controles -->
+    <section class="panel panel-controls">
+      <h2 class="panel-title">SCHEDULER CONTROL</h2>
+
+      <div class="control-group">
+        <label>Algorithm</label>
+        <div class="btn-row">
+          <button class="algo-btn active" data-algo="RR">ROUND ROBIN</button>
+          <button class="algo-btn" data-algo="PRIORITY">PRIORITY</button>
+          <button class="algo-btn" data-algo="SJF">SJF</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>Spawn Process</label>
+        <form id="spawnForm" class="spawn-form">
+          <input type="text" id="spawnName" placeholder="process_name" required maxlength="31">
+          <input type="number" id="spawnPriority" placeholder="priority (0-4)" min="0" max="4" value="2" required>
+          <input type="number" id="spawnBurst" placeholder="burst ms" min="100" max="20000" value="2000" required>
+          <input type="number" id="spawnPages" placeholder="pages" min="1" max="20" value="3" required>
+          <button type="submit" class="spawn-btn">＋ SPAWN</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Painel: tabela de processos -->
+    <section class="panel panel-table">
+      <h2 class="panel-title">PROCESS TABLE</h2>
+      <div class="table-wrap">
+        <table id="processTable">
+          <thead>
+            <tr>
+              <th>PID</th><th>NAME</th><th>STATE</th><th>PRIO</th>
+              <th>PROGRESS</th><th>FRAMES</th><th>FAULTS</th><th>WAIT(ms)</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="processTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footbar">
+    <span>c-engine :: tcp socket stream</span>
+    <span class="sep">/</span>
+    <span>java backend :: spring boot + stomp</span>
+    <span class="sep">/</span>
+    <span>frontend :: vanilla js + canvas</span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# C engine
+c-engine/bin/
+c-engine/*.o
+c-engine/*.out
+
+# Java / Maven
+java-backend/target/
+*.class
+*.jar
+!frontend/**/*.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Logs
+*.log

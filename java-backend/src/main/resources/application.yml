@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: os-dashboard-backend
+
+engine:
+  host: ${ENGINE_HOST:localhost}
+  port: ${ENGINE_PORT:5051}
+  reconnect-delay-ms: 2000
+
+logging:
+  level:
+    root: INFO
+    com.osdashboard: DEBUG

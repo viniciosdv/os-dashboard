@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  c-engine:
+    build:
+      context: ./c-engine
+    container_name: os-dashboard-engine
+    ports:
+      - "5051:5051"
+    command: ["/app/os_engine", "5051", "8"]
+    restart: unless-stopped
+    networks:
+      - os-net
+
+  backend:
+    build:
+      context: ./java-backend
+    container_name: os-dashboard-backend
+    environment:
+      ENGINE_HOST: c-engine
+      ENGINE_PORT: 5051
+    ports:
+      - "8080:8080"
+    depends_on:
+      - c-engine
+    restart: unless-stopped
+    networks:
+      - os-net
+
+  frontend:
+    image: nginx:alpine
+    container_name: os-dashboard-frontend
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - os-net
+
+networks:
+  os-net:
+    driver: bridge
