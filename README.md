@@ -1,16 +1,30 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/C.svg" width="36" height="36" alt="C" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg" width="36" height="36" alt="Java" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg" width="36" height="36" alt="HTML" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" width="36" height="36" alt="CSS" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" width="36" height="36" alt="JavaScript" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Docker.svg" width="36" height="36" alt="Docker" />
 
-# OS::DASHBOARD
-### *Simulador de Sistema Operacional Distribuído em Camadas*
+# ⚡ OS :: DASHBOARD
+**Distributed Operating System Simulator & Real-time HUD**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,30&height=120&section=header&text=C%20•%20Java%20•%20WebSockets&fontSize=22&fontColor=00ffcc" width="100%" />
+<p align="center">
+  <a href="#-o-projeto">Arquitetura</a> •
+  <a href="#-protocolo-de-comunicação">Protocolo</a> •
+  <a href="#-instalação-e-execução">Deploy</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
-[![GitHub license](https://img.shields.io/github/license/viniciosdv/os-dashboard?style=flat-square&color=00ffcc&labelColor=0d0f18)](https://github.com/viniciosdv/os-dashboard/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/viniciosdv/os-dashboard/docker-build.yml?style=flat-square&color=00ffcc&labelColor=0d0f18)](https://github.com/viniciosdv/os-dashboard/actions)
-[![Language C](https://img.shields.io/badge/Core-C-A8B9CC?style=flat-square&labelColor=0d0f18)]()
-[![Backend Java](https://img.shields.io/badge/Backend-Java%20Spring-ED8B00?style=flat-square&labelColor=0d0f18)]()
-[![Frontend](https://img.shields.io/badge/Frontend-HTML%2FJS-E34F26?style=flat-square&labelColor=0d0f18)]()
+[![GitHub license](https://img.shields.io/badge/LICENSE-MIT-00ffcc?style=for-the-badge&labelColor=0a0c14)](https://github.com/viniciosdv/os-dashboard/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/badge/DOCKER-READY-00ffcc?style=for-the-badge&labelColor=0a0c14&logo=docker)](https://github.com/viniciosdv/os-dashboard/actions)
+[![Core](https://img.shields.io/badge/ENGINE-C99-7aa2f7?style=for-the-badge&labelColor=0a0c14&logo=c)]()
+[![Backend](https://img.shields.io/badge/ORCHESTRATOR-JAVA%2017-ed8b00?style=for-the-badge&labelColor=0a0c14&logo=java)]()
+
+</div>
+
+---
 
 </div>
 
