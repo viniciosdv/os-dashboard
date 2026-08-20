@@ -1,26 +1,26 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/C.svg" width="36" height="36" alt="C" />&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg" width="36" height="36" alt="Java" />&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg" width="36" height="36" alt="HTML" />&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" width="36" height="36" alt="CSS" />&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" width="36" height="36" alt="JavaScript" />&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Docker.svg" width="36" height="36" alt="Docker" />
+<!-- Banner animado topo -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,1,15,30&height=180&section=header&text=OS%23%3A%3ADASHBOARD&fontSize=50&fontColor=00ffcc&animation=fadeIn&fontAlignY=35&desc=SYSTEM%20SIMULATOR%20%E2%80%A2%20C%20•%20JAVA%20•%20WEBSOCKETS&descSize=16&descColor=ff007f" width="100%" />
 
-# ⚡ OS :: DASHBOARD
-**Distributed Operating System Simulator & Real-time HUD**
+<br>
 
-<p align="center">
-  <a href="#-o-projeto">Arquitetura</a> •
-  <a href="#-protocolo-de-comunicação">Protocolo</a> •
-  <a href="#-instalação-e-execução">Deploy</a> •
-  <a href="#-roadmap">Roadmap</a>
-</p>
+<!-- Linha de Status Animada (Efeito Hacker/Cyberpunk) -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FFCC&center=true&vCenter=true&width=600&lines=CORE+EM+C+%2B+SOCKETS+TCP;BACKEND+SPRING+BOOT+WEBSOCKET;HUD+CYBERPUNK+EM+TEMPO+REAL" alt="Typing Effect" />
 
-[![GitHub license](https://img.shields.io/badge/LICENSE-MIT-00ffcc?style=for-the-badge&labelColor=0a0c14)](https://github.com/viniciosdv/os-dashboard/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/badge/DOCKER-READY-00ffcc?style=for-the-badge&labelColor=0a0c14&logo=docker)](https://github.com/viniciosdv/os-dashboard/actions)
-[![Core](https://img.shields.io/badge/ENGINE-C99-7aa2f7?style=for-the-badge&labelColor=0a0c14&logo=c)]()
-[![Backend](https://img.shields.io/badge/ORCHESTRATOR-JAVA%2017-ed8b00?style=for-the-badge&labelColor=0a0c14&logo=java)]()
+<br><br>
+
+<!-- Badges com animação flutuante -->
+[![GitHub license](https://img.shields.io/github/license/viniciosdv/os-dashboard?style=for-the-badge&color=ff007f&labelColor=0d0f18)](https://github.com/viniciosdv/os-dashboard/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/viniciosdv/os-dashboard/docker-build.yml?style=for-the-badge&color=00ffcc&labelColor=0d0f18)](https://github.com/viniciosdv/os-dashboard/actions)
+[![Docker Ready](https://img.shields.io/badge/DOCKER-CONTAINERIZED-7aa2f7?style=for-the-badge&labelColor=0d0f18&logo=docker)](https://hub.docker.com/)
+
+<br>
+
+<!-- Barra divisória futurista animada em SVG -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553dd.gif" width="100%">
+
+</div>
 
 </div>
 
