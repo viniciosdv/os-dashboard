@@ -80,7 +80,7 @@
 
 <br>
 
-## 🏗️ Arquitetura
+## 🏗️ Arquitetura do projeto
 
 ```
 ┌─────────────────────┐   TCP socket     ┌───────────────────────┐   WebSocket/STOMP   ┌──────────────────────┐
